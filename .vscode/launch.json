@@ -1,0 +1,48 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run",
+			"type": "node",
+			"request": "launch",
+			"sourceMaps": true,
+			"restart": true,
+			"runtimeExecutable": "pnpm",
+			"runtimeArgs": ["apps:${input:appName}:${input:envName}", "start"],
+			"skipFiles": ["<node_internals>/**"],
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Test",
+			"type": "node",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"sourceMaps": true,
+			"restart": true,
+			"runtimeExecutable": "pnpm",
+			"runtimeArgs": [
+				"test",
+				"${fileBasenameNoExtension}"
+			],
+			"skipFiles": ["<node_internals>/**"],
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen"
+		}
+	],
+	"inputs": [
+		{
+			"id": "appName",
+			"type": "pickString",
+			"description": "Select application",
+			"default": "home",
+			"options": ["home"]
+		},
+		{
+			"id": "envName",
+			"type": "pickString",
+			"description": "Select application",
+			"default": "dev",
+			"options": ["dev", "release"]
+		}
+	]
+}

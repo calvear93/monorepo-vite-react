@@ -1,0 +1,16 @@
+{
+	"version": "0.0.1",
+	"name": "@apps/home",
+	"scripts": {
+		"start": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"type": "module",
+	"dependencies": {
+		"@libs/router": "workspace:*",
+		"@libs/store": "workspace:*",
+		"@libs/ui": "workspace:*",
+		"react": "^18.2.0"
+	}
+}

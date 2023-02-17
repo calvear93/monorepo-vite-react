@@ -1,0 +1,3 @@
+#### Components
+
+App global components.

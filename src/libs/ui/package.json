@@ -1,0 +1,7 @@
+{
+	"name": "@libs/ui",
+	"description": "Shared UI",
+	"main": "src/main.ts",
+	"module": "src/main.ts",
+	"types": "src/main.ts"
+}

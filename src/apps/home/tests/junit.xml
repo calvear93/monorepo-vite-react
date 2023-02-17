@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="4" failures="0" errors="0" time="2.648">
+    <testsuite name="src/tests/AppRouter.test.tsx" timestamp="2023-02-13T14:15:31.996Z" hostname="Legion5iPro" tests="3" failures="0" errors="0" skipped="0" time="0.171">
+        <testcase classname="src/tests/AppRouter.test.tsx" name="AppRouter &gt; has header (banner role) with content &quot;header&quot;" time="0.023">
+        </testcase>
+        <testcase classname="src/tests/AppRouter.test.tsx" name="AppRouter &gt; has footer (contentinfo role) with content &quot;footer&quot;" time="0.002">
+        </testcase>
+        <testcase classname="src/tests/AppRouter.test.tsx" name="AppRouter &gt; navigates to detail page" time="0.038">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/app/pages/Detail.page.spec.tsx" timestamp="2023-02-13T14:15:31.999Z" hostname="Legion5iPro" tests="1" failures="0" errors="0" skipped="0" time="0.05">
+        <testcase classname="src/app/pages/Detail.page.spec.tsx" name="Detail Page &gt; there are an anchor to root" time="0.047">
+        </testcase>
+    </testsuite>
+</testsuites>
