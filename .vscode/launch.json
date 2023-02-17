@@ -2,15 +2,18 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Run",
-			"type": "node",
+			"name": "Debug in Edge",
+			"type": "msedge",
 			"request": "launch",
-			"sourceMaps": true,
-			"restart": true,
-			"runtimeExecutable": "pnpm",
-			"runtimeArgs": ["apps:${input:appName}:${input:envName}", "start"],
-			"skipFiles": ["<node_internals>/**"],
-			"console": "integratedTerminal"
+			"url": "http://localhost:3001",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"name": "Debug in Chrome",
+			"type": "chrome",
+			"request": "launch",
+			"url": "http://localhost:3001",
+			"webRoot": "${workspaceFolder}"
 		},
 		{
 			"name": "Test",
