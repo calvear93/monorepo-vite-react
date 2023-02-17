@@ -1,9 +1,9 @@
 import { beforeAll, describe, expect, test } from 'vitest';
-import { StoreProvider, AppStore } from '@libs/store';
-import { MemoryRouter } from '@libs/router';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { AppRouter } from '../app/App.router';
+import { MemoryRouter } from '@libs/router';
+import { StoreProvider, AppStore } from '@libs/store';
+import { AppRouter } from '../App.router';
 
 describe('AppRouter', () => {
 	// hooks

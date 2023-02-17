@@ -1,5 +1,5 @@
-import { createRouter } from '@libs/router';
 import { lazy } from 'react';
+import { createRouter } from '@libs/router';
 
 export const routes = {
 	Main: {

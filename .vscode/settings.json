@@ -36,7 +36,7 @@
 		"*.tsx": "${capture}.*",
 		".eslintrc.json": ".eslintignore, .prettierrc, .prettierignore",
 		"README*": "CHANGELOG*, LICENSE*",
-		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, package.release.json, .npmrc",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, package.release.json, .npmrc, .syncpackrc.*",
 		"tsconfig.json": "tsconfig.*.json",
 		"vite.config.ts": "vitest.config.ts, unocss.config.ts",
 		"vitest.config.ts": "unocss.config.ts"

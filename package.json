@@ -5,10 +5,11 @@
 		"apps:home:dev": "env -e dev -m @apps/home debug --log debug : pnpm --filter [[m.0]]",
 		"apps:home:release": "env -e release -m @apps/home debug --log debug : pnpm --filter [[m.0]]",
 		"build": "pnpm --filter * build",
-		"test": "vitest run --coverage",
-		"lint": "eslint src/**/*.ts",
+		"test": "vitest run",
+		"env:schema": "env schema -e dev -m build",
 		"format": "prettier --write **/*.{ts,tsx,css,scss,sass,json,html,md}",
-		"syncpack": "syncpack fix-mismatches --workspace && syncpack format",
+		"lint": "eslint src/**/*.ts",
+		"syncpack": "syncpack fix-mismatches -i \"\t\" && syncpack format -i \"\t\"",
 		"clean": "pnpx del-cli **/node_modules **/dist **/.rollup.cache **/.reports **/*.tsbuildinfo **/debug.log"
 	},
 	"dependencies": {
@@ -59,6 +60,25 @@
 		"vite-plugin-webfont-dl": "^3.6.0",
 		"vitest": "^0.28.5"
 	},
+	"contributors": [
+		{
+			"name": "Last Name, First Name",
+			"email": "email@domain.com"
+		}
+	],
+	"keywords": [
+		"react",
+		"monorepo",
+		"pnpm",
+		"vite",
+		"vitest",
+		"typescript",
+		"spa",
+		"pwa",
+		"unocss",
+		"tailwind"
+	],
 	"private": false,
+	"author": "Alvear Candia, Cristopher Alejandro <calvear93@gmail.com>",
 	"license": "MIT"
 }

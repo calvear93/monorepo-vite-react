@@ -1,6 +1,19 @@
 {
-	"indent": "\t",
-	"sortAz": ["dependencies", "devDependencies", "peerDependencies"],
+	"dependencyTypes": [
+		"dev",
+		"overrides",
+		"peer",
+		"pnpmOverrides",
+		"prod",
+		"resolutions",
+		"workspace"
+	],
+	"sortAz": [
+		"dependencies",
+		"devDependencies",
+		"peerDependencies",
+		"resolutions"
+	],
 	"sortFirst": [
 		"version",
 		"project",

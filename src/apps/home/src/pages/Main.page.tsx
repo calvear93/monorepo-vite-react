@@ -1,7 +1,7 @@
-import { generatePath, Link, Page } from '@libs/router';
 import { useEffect } from 'react';
-import { routes } from '../App.router';
+import { generatePath, Link, Page } from '@libs/router';
 import { useAppActions, useAppState } from '@libs/store';
+import { routes } from '../App.router';
 import styles from './main.page.module.scss';
 
 // routes
