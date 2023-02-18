@@ -33,9 +33,10 @@ target="_blank">Vite</a>.
 │   └── appsettings.json
 ├── src/
 │   ├── apps/
-│   │   └── home/ # home vite app
-│   └── libs/ # shared libs
-│       ├── router/
+│   │   └── home/
+│   ├── libs/
+│   │   └── ui/
+│   └── shared/
 │       ├── store/
 │       └── ui/
 ├── tsconfig.json

@@ -1,4 +1,4 @@
-import { StoreProvider, AppStore } from '@libs/store';
+import { StoreProvider, AppStore } from '@shared/store';
 import { BrowserRouter } from '@libs/router';
 import { AppRouter } from './App.router';
 import './styles/app.scss';

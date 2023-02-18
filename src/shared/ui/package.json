@@ -1,5 +1,5 @@
 {
-	"name": "@libs/ui",
+	"name": "@shared/ui",
 	"description": "Shared UI",
 	"main": "src/main.ts",
 	"module": "src/main.ts",

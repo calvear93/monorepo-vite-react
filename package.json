@@ -4,11 +4,10 @@
 	"scripts": {
 		"apps:home:dev": "env -e dev -m @apps/home debug --log debug : pnpm --filter [[m.0]]",
 		"apps:home:release": "env -e release -m @apps/home debug --log debug : pnpm --filter [[m.0]]",
-		"build": "pnpm --filter * build",
 		"test": "vitest --run",
 		"env:schema": "env schema -e dev -m build",
 		"format": "prettier --write **/*.{ts,tsx,css,scss,sass,json,html,md}",
-		"lint": "eslint src/**/*.ts",
+		"lint": "eslint src/**/*.{ts,tsx}",
 		"syncpack": "syncpack fix-mismatches -i \"\t\" && syncpack format -i \"\t\"",
 		"clean": "pnpx del-cli **/node_modules **/dist **/.rollup.cache **/.reports **/*.tsbuildinfo **/debug.log"
 	},

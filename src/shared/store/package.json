@@ -1,5 +1,5 @@
 {
-	"name": "@libs/store",
+	"name": "@shared/store",
 	"description": "Redux store using Easy Peasy",
 	"main": "src/main.ts",
 	"module": "src/main.ts",

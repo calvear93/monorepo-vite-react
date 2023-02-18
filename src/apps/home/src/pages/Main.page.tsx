@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { generatePath, Link, Page } from '@libs/router';
-import { useAppActions, useAppState } from '@libs/store';
+import { useAppActions, useAppState } from '@shared/store';
 import { routes } from '../App.router';
 import styles from './main.page.module.scss';
 

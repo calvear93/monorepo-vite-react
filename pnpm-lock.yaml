@@ -143,15 +143,18 @@ importers:
       '@libs/router':
         specifier: workspace:*
         version: link:../../libs/router
-      '@libs/store':
+      '@shared/store':
         specifier: workspace:*
-        version: link:../../libs/store
-      '@libs/ui':
+        version: link:../../shared/store
+      '@shared/ui':
         specifier: workspace:*
-        version: link:../../libs/ui
+        version: link:../../shared/ui
       react:
         specifier: ^18.2.0
         version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
 
   src/libs/router:
     dependencies:
@@ -165,7 +168,7 @@ importers:
         specifier: ^6.4.2
         version: 6.8.1(react-dom@18.2.0)(react@18.2.0)
 
-  src/libs/store:
+  src/shared/store:
     dependencies:
       easy-peasy:
         specifier: ^5.2.0
@@ -181,7 +184,7 @@ importers:
         specifier: ^9.6.0
         version: 9.6.0
 
-  src/libs/ui: {}
+  src/shared/ui: {}
 
 packages:
 

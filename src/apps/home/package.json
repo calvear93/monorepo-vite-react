@@ -9,8 +9,9 @@
 	"type": "module",
 	"dependencies": {
 		"@libs/router": "workspace:*",
-		"@libs/store": "workspace:*",
-		"@libs/ui": "workspace:*",
-		"react": "^18.2.0"
+		"@shared/store": "workspace:*",
+		"@shared/ui": "workspace:*",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	}
 }

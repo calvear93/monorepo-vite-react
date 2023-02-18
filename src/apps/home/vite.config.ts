@@ -25,10 +25,10 @@ export default {
 		rollupOptions: {
 			output: {
 				manualChunks: {
-					react: ['react'],
-					ui: ['@libs/ui'],
+					react: ['react', 'react-dom'],
+					ui: ['@shared/ui'],
 					router: ['@libs/router'],
-					store: ['@libs/store']
+					store: ['@shared/store']
 				}
 			}
 		}

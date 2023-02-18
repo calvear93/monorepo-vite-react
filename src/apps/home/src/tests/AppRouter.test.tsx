@@ -2,7 +2,7 @@ import { beforeAll, describe, expect, test } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from '@libs/router';
-import { StoreProvider, AppStore } from '@libs/store';
+import { StoreProvider, AppStore } from '@shared/store';
 import { AppRouter } from '../App.router';
 
 describe('AppRouter', () => {
