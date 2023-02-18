@@ -9,7 +9,7 @@ export interface CounterProps
 /**
  * Button component.
  *
- * @returns {JSX.Element} component
+ * @returns component
  */
 export const Counter: React.FC<CounterProps> = ({
 	defaultCount = 0,

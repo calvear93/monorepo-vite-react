@@ -8,7 +8,7 @@ export interface ButtonProps
 /**
  * Button component.
  *
- * @returns {JSX.Element} component
+ * @returns component
  */
 export const Button: React.FC<ButtonProps> = ({
 	text,

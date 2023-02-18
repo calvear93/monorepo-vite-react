@@ -3,8 +3,10 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { Counter } from './Counter';
 
 describe(Counter.name, () => {
+	// hooks
 	afterEach(cleanup);
 
+	// tests
 	test('renders text', () => {
 		const counter = 0;
 		render(<Counter defaultCount={counter} />);
