@@ -1,5 +1,4 @@
 import { UserConfigExport } from 'vite';
-import { CoverageC8Options } from 'vitest';
 import react from '@vitejs/plugin-react-swc';
 import svg from 'vite-plugin-svgr';
 import { checker } from 'vite-plugin-checker';
@@ -34,7 +33,7 @@ export default {
 				'**/__mocks__',
 				'**/__fixtures__'
 			]
-		} as CoverageC8Options
+		}
 	},
 	plugins: [
 		react(),
@@ -47,4 +46,4 @@ export default {
 			}
 		})
 	]
-} as UserConfigExport;
+} satisfies UserConfigExport;

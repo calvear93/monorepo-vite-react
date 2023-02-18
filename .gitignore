@@ -1,27 +1,37 @@
-# dependencies
-**/node_modules
-
-# testing
-**/.reports
-**/coverage
-
 # artifacts
 **/dist
 **/build
 **/dev-dist
-**/tsconfig.build.tsbuildinfo
 
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-debug.log
-debug.json
+# dependency directories
+**/node_modules
+**/jspm_packages
 
-# OS
+# TypeScript cache
+*.tsbuildinfo
+
+# Rollup cache
+**/.rollup.cache
+
+# test reports and coverage directory
+.reports
+__reports__
+**/coverage
+
+# npm cache directory
+.npm
+
+# eslint cache
+.eslintcache
+
+# REPL history
+.node_repl_history
+
+# dotenv environment variable files
+.env
+.env.*
+
+# Mac OS
 .DS_Store
 
 # IDEs and editors
@@ -32,19 +42,27 @@ debug.json
 *.launch
 .settings/
 *.sublime-workspace
-
-# IDE - VSCode
-.vscode/**/*
+.vscode
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/settings.json
 
-# Optional npm cache directory
-.npm
+# logs
+logs
+*.log
+debug.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# Optional eslint cache
-.eslintcache
+# diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# Yarn Integrity file
-.yarn - integrity
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock

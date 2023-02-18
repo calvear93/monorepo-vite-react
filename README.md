@@ -53,7 +53,7 @@ target="_blank">Vite</a>.
     -   `(((project-name)))` project name, i.e. my-project
     -   `(((project-description)))` project description, i.e. API for manage user data
 
-*   Set up your `dev.local.env.json` with:
+*   Set up your `dev.local.env.json` in `env` folder with:
 
 ```json
 {
@@ -77,16 +77,16 @@ Project has 2 environments.
 
 Project uses **npm scripts** for eases execution, testing and building.
 Many of these script run on a defined environment, specified after ':', and
-it environment may be 'dev', 'qa' or 'prod'.
+it environment may be 'dev' or 'release'.
 
-| Command                        | Action                        |
-| ------------------------------ | ----------------------------- |
-| pnpm apps:home:`<env>` `<cmd>` | executes a home app command   |
-| pnpm test                      | executes tests                |
-| pnpm test --coverage           | executes tests with coverage  |
-| pnpm env:schema                | updates env JSON schema       |
-| pnpm lint                      | code format review            |
-| pnpm lint --fix                | code format review/fix        |
+| Command                        | Action                       |
+| ------------------------------ | ---------------------------- |
+| pnpm apps:home:`<env>` `<cmd>` | executes a home app command  |
+| pnpm test                      | executes tests               |
+| pnpm test --coverage           | executes tests with coverage |
+| pnpm env:schema                | updates env JSON schema      |
+| pnpm lint                      | code format review           |
+| pnpm lint --fix                | code format review/fix       |
 
 ## 🧿 **Linting**
 
@@ -96,24 +96,6 @@ Project use linters, for code formatting and code styling normalizing.
 -   **[prettier](https://prettier.io/)**: opinionated code formatter
 
 For correct interpretation of linters, is recommended to use [Visual Studio Code](https://code.visualstudio.com/) as IDE and install the plugins in .vscode folder at 'extensions.json'.
-
-## 🛠️ **Troubleshooting**
-
--   **I want to debug my code with breakpoints**:
-
-    First, you should run your app with `pnpm start:dev` so you can debug in Visual Studio Code,
-    using the `launch.json` profile in .vscode, pressing F5 or in Run and Debug sidebar option.
-
--   **`<cmd>` is not recognized as an internal or external command, operable program or batch file.**:
-
-    In Windows, sometimes appear this message, because some node module isn't installed for your system version.
-    In example, if you execute `npm i` in WSL, and execute `pnpm start:dev` in Powershell, you get the error
-    for `env-cmd` is not recognized.
-    So, you should execute `npm i` in Powershell terminal for solve that.
-
-*   **I can't see my console logs for my unit tests**:
-
-    You can set "verbose": false in webpack.config.js for show your console logs.
 
 ---
 
