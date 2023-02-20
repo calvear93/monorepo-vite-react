@@ -55,4 +55,4 @@ export default {
 			minify: true
 		})
 	]
-} as UserConfigExport;
+} satisfies UserConfigExport;

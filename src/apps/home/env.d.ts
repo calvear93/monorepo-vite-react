@@ -33,17 +33,3 @@ interface ImportMetaEnv {
 interface ImportMeta {
 	readonly env: ImportMetaEnv;
 }
-
-declare global {
-	// SECTION: global custom types
-	type decimal = number;
-
-	type seconds = number;
-
-	type millis = number;
-
-	// Unix timestamp, number of seconds that have elapsed since January 1, 1970
-	type epoch = seconds;
-
-	type AnyError = unknown;
-}

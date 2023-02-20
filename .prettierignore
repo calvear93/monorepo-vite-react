@@ -1,6 +1,5 @@
 .vscode
 .reports
-tests
 .rollup.cache
 build
 dist
