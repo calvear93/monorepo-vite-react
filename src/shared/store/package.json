@@ -1,4 +1,5 @@
 {
+	"version": "0.0.1",
 	"name": "@shared/store",
 	"description": "Redux store using Easy Peasy",
 	"main": "src/main.ts",
