@@ -1,4 +1,3 @@
-/// <reference types="redux" />
 import { createStore, createTypedHooks } from 'easy-peasy';
 import { type AppState, state } from './state';
 
