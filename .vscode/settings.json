@@ -1,9 +1,9 @@
 {
-	"[javascript][typescript][javascriptreact][typescriptreact]": {
-		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
-	},
 	"[html][json][jsonc][markdown][css][less][scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript][typescript][javascriptreact][typescriptreact]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
 	"css.lint.unknownAtRules": "ignore",
 	"editor.detectIndentation": true,
@@ -34,12 +34,11 @@
 		"*.mjs": "${capture}.mjs.*",
 		"*.ts": "${capture}.*",
 		"*.tsx": "${capture}.*",
-		".eslintrc.json": ".eslintignore, .prettierrc, .prettierignore",
+		".eslintrc*": ".eslintignore, .prettierrc*, .prettierignore, .stylelintrc*, .stylelintignore",
 		"README*": "CHANGELOG*, LICENSE*",
-		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, package.release.json, .npmrc, .syncpackrc.*",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, package.release.json, .npmrc, .syncpackrc.json",
 		"tsconfig.json": "tsconfig.*.json",
-		"vite.config.ts": "vitest.config.ts, unocss.config.ts",
-		"vitest.config.ts": "unocss.config.ts"
+		"vite.config.ts": "vitest.config.ts, unocss.config.ts"
 	},
 	"explorer.incrementalNaming": "smart",
 	"explorer.sortOrder": "type",
@@ -75,6 +74,9 @@
 		"**/package-lock.json": true,
 		"**/pnpm-lock.yaml": true
 	},
+	"stylelint.packageManager": "pnpm",
+	"stylelint.snippet": ["css", "postcss", "scss", "sass"],
+	"stylelint.validate": ["css", "postcss", "scss", "sass"],
 	"typescript.autoClosingTags": true,
 	"typescript.suggest.autoImports": true,
 	"typescript.tsdk": "node_modules\\typescript\\lib",

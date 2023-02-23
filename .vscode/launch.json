@@ -23,10 +23,7 @@
 			"sourceMaps": true,
 			"restart": true,
 			"runtimeExecutable": "pnpm",
-			"runtimeArgs": [
-				"test",
-				"${fileBasenameNoExtension}"
-			],
+			"runtimeArgs": ["test", "${fileBasenameNoExtension}"],
 			"skipFiles": ["<node_internals>/**"],
 			"console": "integratedTerminal",
 			"internalConsoleOptions": "neverOpen"
