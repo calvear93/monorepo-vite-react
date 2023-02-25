@@ -45,7 +45,7 @@
 
 ## 🧪 **Executing**
 
-| Command                        | Action                      |
-| ------------------------------ | --------------------------- |
-| pnpm apps:home:`<env>` `<cmd>` | executes a home app command |
-| pnpm test                      | executes tests              |
+| Command                | Action                      |
+| ---------------------- | --------------------------- |
+| pnpm apps:home `<cmd>` | executes a home app command |
+| pnpm test              | executes tests              |

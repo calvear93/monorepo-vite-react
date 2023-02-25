@@ -1,10 +1,8 @@
 {
 	"project": "monorepo-vite-react",
 	"scripts": {
-		"apps:home:dev": "env -e dev -m @apps/home debug --log debug : pnpm --filter [[m.0]]",
-		"apps:home:release": "env -e release -m @apps/home debug --log debug : pnpm --filter [[m.0]]",
+		"apps:home": "env -m @apps/home debug : pnpm --filter [[m.0]]",
 		"test": "vitest --run",
-		"env:schema": "env schema -e dev -m build",
 		"lint": "eslint src/**/*.{ts,cts,mts,tsx}",
 		"format": "prettier --write **/*.{ts,cts,mts,tsx,css,scss,sass,json,html,md,yml,yaml}",
 		"syncpack": "syncpack fix-mismatches && syncpack format",

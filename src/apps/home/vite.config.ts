@@ -7,7 +7,6 @@ import svg from 'vite-plugin-svgr';
 const fontFamily = process.env.FONT_FAMILY;
 const fontWeight = process.env.FONT_WEIGHTS;
 
-// https://vitejs.dev/config/
 export default {
 	base: normalizePath(`/${process.env.BASE_URL}`),
 	server: {
@@ -17,7 +16,6 @@ export default {
 	},
 	build: {
 		sourcemap: process.env.SOURCEMAP === 'true',
-		emptyOutDir: true,
 		minify: true,
 		target: process.env.TARGET,
 		rollupOptions: {
