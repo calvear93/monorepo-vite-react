@@ -1,6 +1,6 @@
 {
-	"short_name": "(((app-title)))",
-	"name": "(((app-title)))",
+	"short_name": "Monorepo Vite",
+	"name": "Monorepo Vite React",
 	"icons": [
 		{
 			"src": "icons/favicon.ico",

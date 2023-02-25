@@ -38,14 +38,6 @@
 
 ## 📥 **Getting Started**
 
--   Replace globally these terms:
-
-    -   `(((base-path)))` web base path, i.e. web (for get /web/\*)
-    -   `(((app-name)))` app name, i.e. home-web
-    -   `(((app-title)))` app title, i.e. Sample API
-    -   `(((project-name)))` project name, i.e. my-project
-    -   `(((project-description)))` project description, i.e. API for manage user data
-
 -   Install [NodeJS](https://nodejs.org/es/).
 -   Install [PNPM](https://pnpm.io/installation)
 -   Execute `pnpm install` command.
@@ -53,16 +45,7 @@
 
 ## 🧪 **Executing**
 
-Project uses **npm scripts** for eases execution, testing and building.
-Many of these script run on a defined environment, specified after ':', and
-it environment may be 'dev' or 'release'.
-
-| Command                        | Action                       |
-| ------------------------------ | ---------------------------- |
-| pnpm apps:home:`<env>` `<cmd>` | executes a home app command  |
-| pnpm test                      | executes tests               |
-| pnpm test --coverage           | executes tests with coverage |
-
----
-
-⌨ by Alvear Candia, Cristopher Alejandro <calvear93@gmail.com>
+| Command                        | Action                      |
+| ------------------------------ | --------------------------- |
+| pnpm apps:home:`<env>` `<cmd>` | executes a home app command |
+| pnpm test                      | executes tests              |
