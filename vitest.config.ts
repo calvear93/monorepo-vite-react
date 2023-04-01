@@ -4,7 +4,7 @@ import svg from 'vite-plugin-svgr';
 
 export default {
 	test: {
-		globals: true, // for @testing-library
+		globals: true,
 		environment: 'jsdom',
 		include: ['src/**/*.{spec,test}.{ts,cts,mts,tsx}'],
 		setupFiles: [
