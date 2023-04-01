@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/calvear93/react-template" target="_blank">
-	<img src="https://img.shields.io/github/license/calvear93/react-template" alt="Package License" />
+  <a href="https://github.com/calvear93/monorepo-vite-react" target="_blank">
+	<img src="https://img.shields.io/github/license/calvear93/monorepo-vite-react" alt="Package License" />
   </a>
 </p>
 
